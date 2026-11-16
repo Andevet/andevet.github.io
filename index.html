@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Andebet Mola | Software Developer</title>
+    <title>Andevet Mola | Software Developer</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,8 +13,23 @@
     />
     <!-- CSS File -->
     <link rel="stylesheet" href="style.css" />
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
+
+  <!--- Theme Toggle Button
+    
+    id="theme-toggle": תעודת זהות ייחודית לאלמנט. אנחנו משתמשים בה כדי שה-JavaScript יוכל "לתפוס" את הכפתור הספציפי הזה מתוך כל הדף
+    class="theme-toggle": מחלקת CSS שמאפשרת לנו לעצב את הכפתור בצורה אחידה
+    aria-label="Toggle Dark Mode": תכונת נגישות שמסבירה לקוראי מסך מה הכפתור עושה, במקרה הזה "החלפת מצב כהה"
+  
+  --->
   <body>
+    <!--החלפת רקע כהה או בהיר -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+    🌙
+  </button>
     <!-- Header / Hero Section -->
     <header>
       <img src="image.png" alt="Andebet Mola" class="profile-img" />
@@ -23,13 +38,13 @@
         Software Engineering Student | Aspiring Software Developer
       </p>
       <p class="hero-desc">
-        3rd-year student at Afeka College of Engineering, focused on
+        4rd-year student at Afeka College of Engineering, focused on
         object-oriented programming, clean architecture, and building robust
         backend systems.
       </p>
       <!-- תגית a יוצרת קישור לחיץ שמוביל לקובץ ה-PDF של קורות החיים -->
 <a 
-    
+    target="_blank"
     /* הקישור לקובץ: הדפדפן יחפש קובץ בשם זה שנמצא באותה תיקייה */
     href="Andevet_Mola_CV.pdf" 
     /* תכונת download מורה לדפדפן להוריד את הקובץ ישירות למחשב של המשתמש במקום רק לפתוח אותו */
@@ -47,7 +62,7 @@
       <section id="about">
         <h2>About Me</h2>
         <p>
-          I am a 3rd-year Software Engineering student at Afeka Academic College
+          I am a 4rd-year Software Engineering student at Afeka Academic College
           of Engineering with a passion for problem-solving, clean code, and
           continuous self-learning.
         </p>
@@ -143,5 +158,6 @@
         </div>
       </address>
     </footer>
+  <script src="script.js"></script>  
   </body>
 </html>
